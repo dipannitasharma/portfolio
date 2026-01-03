@@ -8,7 +8,7 @@ const projects = [
         desc: "A frontend-focused portfolio exploring layout, motion, and interaction.",
         extra: "Currently obsessing over micro-interactions and smooth transitions.",
         tags: ["React", "Tailwind", "UI"],
-        github: "https://github.com/dipannitasharma",
+        github: "https://github.com/dipannitasharma/portfolio",
         icon: <FaReact />,
         highlight: true,
     },
