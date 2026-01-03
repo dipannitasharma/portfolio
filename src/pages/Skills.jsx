@@ -122,14 +122,24 @@ const Skills = () => {
       </div>
 
       {/*  CAROUSEL  */}
-      <div className="relative w-full max-w-4xl h-105 flex items-center justify-center z-10">
+      <div className="relative flex items-center justify-center w-full max-w-4xl h-105  z-10">
 
         <button
           onClick={prev}
-          className="absolute left-0 z-20 w-14 h-14 rounded-full bg-white/10 backdrop-blur border border-white/20 text-white hover:scale-110 transition"
+          className="
+    absolute flex items-center justify-center left-1 md:left-0 z-20
+    w-10 h-10 md:w-14 md:h-14
+    rounded-full
+    bg-white/10 backdrop-blur
+    border border-white/20
+    text-white
+    hover:scale-110
+    transition
+  "
         >
-          <HiChevronLeft className="text-3xl" />
+          <HiChevronLeft className="text-xl md:text-3xl " />
         </button>
+
 
         <div
           className="relative w-full h-full flex items-center justify-center cursor-grab active:cursor-grabbing"
@@ -145,10 +155,20 @@ const Skills = () => {
 
         <button
           onClick={next}
-          className="absolute right-0 z-20 w-14 h-14 rounded-full bg-white/10 backdrop-blur border border-white/20 text-white hover:scale-110 transition"
+          className="
+    absolute flex items-center justify-center right-1 md:right-0 z-20
+    w-10 h-10 md:w-14 md:h-14
+    rounded-full
+    bg-white/10 backdrop-blur
+    border border-white/20
+    text-white
+    hover:scale-110
+    transition
+  "
         >
-          <HiChevronRight className="text-3xl" />
+          <HiChevronRight className="text-xl md:text-3xl " />
         </button>
+
       </div>
     </section>
   );
@@ -160,7 +180,18 @@ export default Skills;
 
 const SkillCard = ({ skill, position }) => {
   const base =
-    "absolute flex flex-col items-center text-center backdrop-blur-xl bg-white/10 border border-white/20 rounded-[3rem] px-8 py-10 shadow-2xl transition-all duration-500 ease-out w-[320px] h-[380px]";
+    `
+      absolute flex flex-col items-center text-center
+      backdrop-blur-xl bg-white/10
+      border border-white/20
+      rounded-[3rem]
+      px-6 md:px-8
+      py-8 md:py-10
+      shadow-2xl
+      transition-all duration-500 ease-out
+      w-[280px] sm:w-[300px] md:w-[320px]
+      h-[360px] md:h-[380px]
+  `;
 
   const positions = {
     left: "scale-90 -translate-x-52 opacity-50",
@@ -186,9 +217,10 @@ const SkillCard = ({ skill, position }) => {
         {skill.title}
       </h3>
 
-      <p className="text-sm text-gray-200 leading-relaxed mb-6 px-2">
+      <p className="text-sm text-gray-200 leading-relaxed mb-4 md:mb-6 px-1 md:px-2">
         {skill.desc}
       </p>
+
 
       <div className="w-16 h-px bg-white/30 mb-4 rounded-full" />
 
