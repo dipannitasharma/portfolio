@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import { HiMenu, HiX } from "react-icons/hi";
+
+import { HiBars3, HiXMark } from "react-icons/hi2";
+
 
 const sections = ["home", "about", "skills", "project", "contact"];
 
@@ -123,7 +125,7 @@ const Navbar = () => {
                 hover:scale-105
               "
                         >
-                            {open ? <HiX /> : <HiMenu />}
+                            {open ? <HiXMark /> : <HiBars3 />}
                         </button>
 
                         {/* Dropdown */}
