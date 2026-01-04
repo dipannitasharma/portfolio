@@ -48,17 +48,34 @@ const Contact = () => {
 
                     <a
                         href="mailto:dipannitasharma1@gmail.com"
-                        className="group flex items-center justify-center gap-4 px-6 py-4
-              rounded-2xl bg-white/5 border border-white/15
-              hover:bg-white/10 transition"
+                        className="
+      group flex items-center justify-center gap-3 sm:gap-4
+      px-5 sm:px-6 py-4
+      rounded-2xl
+      bg-white/5 border border-white/15
+      hover:bg-white/10
+      transition
+    "
                     >
-                        <FaEnvelope className="text-lg sm:text-xl text-[#FFD41D]" />
+                        {/* Icon wrapper for proper tap size */}
+                        <div className="w-10 h-10 sm:w-11 sm:h-11 flex items-center justify-center rounded-full">
+                            <FaEnvelope className="text-base sm:text-lg text-[#FFD41D]" />
+                        </div>
 
-                        <span className="text-gray-200 group-hover:text-white transition">
+                        {/* Email text */}
+                        <span
+                            className="
+        text-sm sm:text-base
+        text-gray-200 group-hover:text-white
+        transition
+        break-all sm:break-normal
+      "
+                        >
                             dipannitasharma1@gmail.com
                         </span>
                     </a>
                 </div>
+
 
                 {/* Divider */}
                 <div className="w-full h-px bg-white/15 mb-8" />
