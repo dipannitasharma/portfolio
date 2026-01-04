@@ -106,10 +106,10 @@ const Skills = () => {
     <section id="skills" className="relative bg-[#110619] px-6 md:px-20 py-24 overflow-hidden flex flex-col items-center">
 
       {/*  STATIC BACKGROUND  */}
-      <div className="absolute inset-0 bg-linear-to-br from-[#2a0f45] via-[#110619] to-[#1a0830]" />
-      <div className="absolute -top-40 left-1/4 w-130 h-130 bg-pink-500/20 blur-[160px] rounded-full" />
-      <div className="absolute bottom-0 right-1/4 w-130 h-130 bg-indigo-500/20 blur-[160px] rounded-full" />
-      <div className="absolute inset-0 bg-[radial-gradient(#ffffff10_1px,transparent_1px)] bg-size-[56px_56px] opacity-20" />
+      <div className="absolute -top-32 -left-32 w-96 h-96 bg-purple-500/25 rounded-full blur-[120px]" />
+      <div className="absolute top-1/3 -right-32 w-96 h-96 bg-pink-500/25 rounded-full blur-[120px]" />
+      <div className="absolute bottom-0 left-1/3 w-72 h-72 bg-indigo-500/20 rounded-full blur-[100px]" />
+
 
       {/*  HEADING  */}
       <div className="relative mb-16 text-center z-10">

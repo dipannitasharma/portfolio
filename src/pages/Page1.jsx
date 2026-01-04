@@ -30,7 +30,7 @@ const Page1 = () => {
 
             {/* Content */}
             <div className="relative z-10 min-h-screen">
-                <Navbar />
+               
 
                 {/* Hero */}
                             <div

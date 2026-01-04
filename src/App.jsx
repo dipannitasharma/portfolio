@@ -7,6 +7,7 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   const [showIntro, setShowIntro] = useState(true);
@@ -23,6 +24,7 @@ const App = () => {
     <>
       {/* MAIN APP — ALWAYS MOUNTED */}
       <div className="relative w-full">
+        <Navbar />
         <Page1 />
         <About />
         <Skills />

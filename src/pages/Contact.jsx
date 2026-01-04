@@ -8,8 +8,9 @@ const Contact = () => {
             className="relative bg-[#110619] px-6 md:px-20 py-24 overflow-hidden"
         >
             {/* Background */}
-            <div className="absolute inset-0 bg-linear-to-br from-[#1f0b35] via-[#110619] to-[#0d0418]" />
-            <div className="absolute inset-0 bg-[radial-gradient(#ffffff10_1px,transparent_1px)] bg-size-[48px_48px] opacity-15" />
+            <div className="absolute -top-32 -left-32 w-96 h-96 bg-purple-500/25 rounded-full blur-[120px]" />
+            <div className="absolute top-1/3 -right-32 w-96 h-96 bg-pink-500/25 rounded-full blur-[120px]" />
+            <div className="absolute bottom-0 left-1/3 w-72 h-72 bg-indigo-500/20 rounded-full blur-[100px]" />
 
             {/* Heading */}
             <div className="relative z-10 flex flex-col items-center text-center mb-20">
@@ -46,14 +47,14 @@ const Contact = () => {
                     </p>
 
                     <a
-                        href="mailto:dipannitasharma@gmail.com"
+                        href="mailto:dipannitasharma1@gmail.com"
                         className="group flex items-center justify-center gap-4 px-6 py-4
               rounded-2xl bg-white/5 border border-white/15
               hover:bg-white/10 transition"
                     >
                         <FaEnvelope className="text-xl text-[#FFD41D]" />
                         <span className="text-gray-200 group-hover:text-white transition">
-                            dipannitasharma@gmail.com
+                            dipannitasharma1@gmail.com
                         </span>
                     </a>
                 </div>
