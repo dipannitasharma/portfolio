@@ -52,7 +52,7 @@ const Contact = () => {
               rounded-2xl bg-white/5 border border-white/15
               hover:bg-white/10 transition"
                     >
-                        <div className="w-10 h-10 sm:w-11 pl-5 sm:h-11  flex items-center justify-center">
+                        <div className="w-10 h-10 sm:w-11 sm:h-11  flex items-center justify-center">
                             <FaEnvelope className="text-base sm:text-lg text-[#FFD41D]" />
                         </div>
 
