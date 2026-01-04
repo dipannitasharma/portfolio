@@ -67,8 +67,8 @@ const Footer = () => {
                         >
                             
                             <p>
-                                Assisted by<span className="text-white"> The Lord</span>.<br />
-                                Reality checks by <span className="text-white"> clue5</span>.
+                                Assisted by<span className="text-[#FFD41D]"> Caps</span>.<br />
+                                Reality checks by <span className="text-[#FFD41D]"> clue5</span>.
                             </p>
                         </div>
                     </div>

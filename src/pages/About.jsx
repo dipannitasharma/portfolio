@@ -135,7 +135,12 @@ const About = () => {
                     </p>
                     {/* Hover-reveal one-liner */}
                     <div className="mt-6 group w-fit cursor-help">
-                        <span className="text-gray-400 text-sm tracking-wide group-hover:opacity-40 transition">
+                        <span className=" list-none
+        text-gray-400 text-sm tracking-wide
+        transition
+        hover:opacity-60
+        focus:outline-none
+      ">
                           Hover over the hood
                         </span>
 
@@ -144,7 +149,8 @@ const About = () => {
                                 Most of the work is in the parts you don’t notice.
                             </p>
                         </div>
-                    </div>
+                    </div> 
+                    
 
 
 

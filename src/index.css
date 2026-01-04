@@ -4,130 +4,25 @@
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
 }
-
-.animate-float {
-  animation: float 4s ease-in-out infinite;
+details > div {
+  overflow: hidden;
+  animation: reveal 0.4s ease-out;
 }
 
-/* Icon drift */
-@keyframes drift {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-.animate-drift {
-  animation: drift 6s ease-in-out infinite;
-}
-
-/* Background blobs */
-@keyframes blob1 {
-  50% { transform: translate(40px, -30px) scale(1.1); }
-}
-
-@keyframes blob2 {
-  50% { transform: translate(-30px, 40px) scale(1.05); }
-}
-
-@keyframes blob3 {
-  50% { transform: translate(20px, 20px); }
-}
-
-.animate-blob1 {
-  animation: blob1 18s ease-in-out infinite;
-}
-
-.animate-blob2 {
-  animation: blob2 22s ease-in-out infinite;
-}
-
-.animate-blob3 {
-  animation: blob3 26s ease-in-out infinite;
-}
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-
-.animate-shimmer {
-  background-size: 200% 100%;
-  animation: shimmer 12s linear infinite;
-
-}
-/* ---------- Aurora background ---------- */
-@keyframes aurora {
-  0% {
-    filter: hue-rotate(0deg);
-    transform: scale(1);
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
   }
-  50% {
-    filter: hue-rotate(30deg);
-    transform: scale(1.05);
-  }
-  100% {
-    filter: hue-rotate(0deg);
-    transform: scale(1);
-  }
-}
-
-.animate-aurora {
-  animation: aurora 18s ease-in-out infinite;
-}
-
-/* ---------- Light wave ---------- */
-@keyframes wave {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 200% 50%;
-  }
-}
-
-.animate-wave {
-  animation: wave 14s linear infinite;
-}
-
-/* ---------- Particles ---------- */
-@keyframes particles {
-  0% {
+  to {
+    opacity: 1;
     transform: translateY(0);
   }
-  100% {
-    transform: translateY(-40px);
-  }
 }
 
-.animate-particles {
-  animation: particles 20s linear infinite;
-}
 
-/* ---------- Blobs (soft movement) ---------- */
-@keyframes blob1 {
-  0% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(40px, -30px) scale(1.1); }
-  100% { transform: translate(0, 0) scale(1); }
-}
 
-@keyframes blob2 {
-  0% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(-40px, 30px) scale(1.05); }
-  100% { transform: translate(0, 0) scale(1); }
-}
 
-@keyframes blob3 {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(20px, 20px); }
-  100% { transform: translate(0, 0); }
-}
 
-.animate-blob1 {
-  animation: blob1 22s ease-in-out infinite;
-}
-.animate-blob2 {
-  animation: blob2 26s ease-in-out infinite;
-}
-.animate-blob3 {
-  animation: blob3 30s ease-in-out infinite;
-}
 
 
