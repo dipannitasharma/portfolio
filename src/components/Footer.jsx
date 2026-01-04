@@ -68,7 +68,7 @@ const Footer = () => {
                             
                             <p>
                                 Assisted by<span className="text-[#FFD41D]"> Caps</span>.<br />
-                                Reality checks by <span className="text-[#FFD41D]"> clue5</span>.
+                                Reality checks by <span className="text-[#FFD41D]"> Clue5</span>.
                             </p>
                         </div>
                     </div>
