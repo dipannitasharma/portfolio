@@ -53,7 +53,7 @@ const Navbar = () => {
                 <div className="hidden md:flex justify-center">
                     <nav
                         className={`
-              backdrop-blur-md border border-white/20
+              backdrop-blur-md border-3 border-white/20
               rounded-2xl px-8 py-4
               transition-all duration-300
               ${scrolled ? "bg-white/15 shadow-xl" : "bg-white/10"}
@@ -72,9 +72,13 @@ const Navbar = () => {
                                                 }`}
                                         >
                                             {link.label}
-                                            {isActive && (
-                                                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#FFD41D]/60 rounded-full" />
-                                            )}
+                                            <span
+                                                className={`
+                          absolute -bottom-1 left-0 h-0.5 rounded-full
+                          bg-[#FFD41D]/70 transition-all duration-300
+                          ${isActive ? "w-full" : "w-0 group-hover/item:w-full"}
+                        `}
+                                            />
                                         </button>
                                     </li>
                                 );
