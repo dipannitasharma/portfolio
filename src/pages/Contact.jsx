@@ -52,7 +52,10 @@ const Contact = () => {
               rounded-2xl bg-white/5 border border-white/15
               hover:bg-white/10 transition"
                     >
-                        <FaEnvelope className="text-xl text-[#FFD41D]" />
+                        <div className="w-10 h-10 sm:w-11 pl-5 sm:h-11  flex items-center justify-center">
+                            <FaEnvelope className="text-base sm:text-lg text-[#FFD41D]" />
+                        </div>
+
                         <span className="text-gray-200 group-hover:text-white transition">
                             dipannitasharma1@gmail.com
                         </span>
