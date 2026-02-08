@@ -3,13 +3,13 @@ import { FaReact, FaGithub } from "react-icons/fa";
 
 const projects = [
     {
-        title: "Personal Portfolio",
-        status: "In Progress",
-        desc: "A frontend-focused portfolio exploring layout, motion, and interaction.",
-        extra: "Currently obsessing over micro-interactions and smooth transitions.",
-        tags: ["React", "Tailwind", "UI"],
-        github: "https://github.com/dipannitasharma/portfolio",
-        icon: <FaReact />,
+        title: "CA Frontpage Generator",
+        status: "Completed",
+        desc: "A React app for generating CA frontpage to reduce manual work and errors.",
+        extra: "Currently used by 100+ students, saving hours of manual formatting for each subject.",
+        tags: ["React", "Tailwind", "React-PDF","PPTXGenJS"],
+        github: "https://github.com/dipannitasharma/front-page-generator",
+        icon: <HiOutlineCode />,
         highlight: true,
     },
     {
