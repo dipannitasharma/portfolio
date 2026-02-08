@@ -12,7 +12,7 @@ const projects = [
         icon: <HiOutlineCode />,
         highlight: true,
     },
-    {
+ {
         title: "Color Palette Generator",
         status: "Practice",
         desc: "A small tool for generating and exploring color palettes.",
