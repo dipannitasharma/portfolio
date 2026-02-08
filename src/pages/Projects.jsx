@@ -25,16 +25,6 @@ const projects = [
     live: "https://xplorica-qr-generator.vercel.app/", 
     icon: <HiOutlineCode />,
   },
-  {
-    title: "Personal Portfolio",
-    status: "In Progress",
-    desc: "My personal portfolio website built with React, Tailwind CSS and Framer Motion.",
-    extra: "Showcases my projects, skills, and experience in a clean and modern design.",
-    tags: ["React", "Tailwind", "Framer Motion"],
-    github: "https://github.com/dipannitasharma/portfolio",
-    live: "https://dipannita.vercel.app/", 
-    icon: <FaReact />,
-  },
 ];
 
 
