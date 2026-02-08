@@ -12,24 +12,15 @@ const projects = [
         icon: <HiOutlineCode />,
         highlight: true,
     },
- {
-        title: "Color Palette Generator",
-        status: "Practice",
-        desc: "A small tool for generating and exploring color palettes.",
-        extra: "Built to understand color harmony and UI balance.",
-        tags: ["JavaScript", "UI"],
-        github: "https://github.com/dipannitasharma/Color-Palette-Generator",
-        icon: <HiOutlineCode />,
-    },
-    {
-        title: "Quiz App",
-        status: "Practice",
-        desc: "A simple quiz app with scoring and multiple-choice logic.",
-        extra: "Focused on basic state handling and DOM updates.",
-        tags: ["JavaScript", "HTML", "CSS"],
-        github: "https://github.com/dipannitasharma/QUIZ-GAME",
-        icon: <HiOutlineCode />,
-    },
+    
+     {
+        title: "Personal Portfolio",
+        status: "In Progress",
+        desc: "My personal portfolio website built with React, Tailwind CSS and Framer Motion.",
+        extra: "Showcases my projects, skills, and experience in a clean and modern design.",
+        tags: ["React", "Tailwind", "Framer Motion"],
+        github: "https://github.com/dipannitasharma/portfolio",
+     }
 ];
 
 const Projects = () => {
