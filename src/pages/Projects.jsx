@@ -1,27 +1,33 @@
 import { HiOutlineCode } from "react-icons/hi";
 import { FaReact, FaGithub } from "react-icons/fa";
+import { HiOutlineExternalLink } from "react-icons/hi";
+
 
 const projects = [
-    {
-        title: "CA Frontpage Generator",
-        status: "Completed",
-        desc: "A React app for generating CA frontpage to reduce manual work and errors.",
-        extra: "Currently used by 100+ students, saving hours of manual formatting for each subject.",
-        tags: ["React", "Tailwind", "React-PDF","PPTXGenJS"],
-        github: "https://github.com/dipannitasharma/front-page-generator",
-        icon: <HiOutlineCode />,
-        highlight: true,
-    },
-    
-     {
-        title: "Personal Portfolio",
-        status: "In Progress",
-        desc: "My personal portfolio website built with React, Tailwind CSS and Framer Motion.",
-        extra: "Showcases my projects, skills, and experience in a clean and modern design.",
-        tags: ["React", "Tailwind", "Framer Motion"],
-        github: "https://github.com/dipannitasharma/portfolio",
-     }
+  {
+    title: "CA Frontpage Generator",
+    status: "Completed",
+    desc: "A React app for generating CA frontpage to reduce manual work and errors.",
+    extra: "Currently used by 100+ students, saving hours of manual formatting for each subject.",
+    tags: ["React", "Tailwind", "React-PDF", "PPTXGenJS"],
+    github: "https://github.com/dipannitasharma/front-page-generator",
+    live: "https://ca-front-page-generator.vercel.app", 
+    icon: <HiOutlineCode />,
+    highlight: true,
+  },
+
+  {
+    title: "Personal Portfolio",
+    status: "In Progress",
+    desc: "My personal portfolio website built with React, Tailwind CSS and Framer Motion.",
+    extra: "Showcases my projects, skills, and experience in a clean and modern design.",
+    tags: ["React", "Tailwind", "Framer Motion"],
+    github: "https://github.com/dipannitasharma/portfolio",
+    live: "https://dipannita.vercel.app/", 
+    icon: <FaReact />,
+  },
 ];
+
 
 const Projects = () => {
     return (
@@ -98,16 +104,33 @@ const Projects = () => {
                             ))}
                         </div>
 
-                        {/* github link */}
+                       {/* links */}
+                        <div className="relative z-10 mt-6 flex items-center gap-4 text-sm">
+                        
+                        {/* GitHub */}
                         <a
                             href={project.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="relative z-10 mt-6 inline-flex items-center gap-2 text-sm text-gray-300 hover:text-white transition"
+                            className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition"
                         >
                             <FaGithub />
-                            View code
+                            Code
                         </a>
+
+                        {/* Live */}
+                        {project.live && (
+                            <a
+                            href={project.live}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition"
+                            >
+                            <HiOutlineExternalLink />
+                            Live
+                            </a>
+                        )}
+                        </div>
                     </div>
                 ))}
             </div>
