@@ -15,19 +15,8 @@ const projects = [
     icon: <HiOutlineCode />,
     highlight: true,
   },
-  {
-    title:"QR Code Generator App",
-    status: "Completed",
-    desc: "A React app for generating QR codes for any text input.",
-    extra: "Simple and efficient tool for creating QR codes with customizable size and file name and fixed club logo in the middle.",
-    tags: ["React", "Tailwind", "QR-Code"],
-    github: "https://github.com/Xplorica-FIEM/QR_Generator",
-    live: "https://xplorica-qr-generator.vercel.app/", 
-    icon: <HiOutlineCode />,
-  },
+  
 ];
-
-
 const Projects = () => {
     return (
         <section
