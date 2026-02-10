@@ -71,13 +71,11 @@ const Contact = () => {
                 </div>
                 {/* Divider */}
                 <div className="w-full h-px bg-white/15 mb-8" />
-
                 {/* SOCIALS */}
                 <div>
                     <p className="text-xs uppercase tracking-widest text-gray-400 mb-4 text-center">
                         Elsewhere
                     </p>
-
                     <div className="flex justify-center gap-6">
                         <a
                             href="https://www.linkedin.com/in/dipannita-sharma-4906ab291"
