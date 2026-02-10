@@ -27,16 +27,16 @@ const About = () => {
                 {/* LEFT CARD */}
                 <div
                     className="
-            w-full md:w-120
-            backdrop-blur-lg bg-white/5
-            border border-white/15
-            rounded-3xl p-8
-            shadow-2xl
-            flex flex-col gap-6
-            transition-all duration-300 ease-out
-            hover:scale-[1.03]
-            hover:shadow-[0_0_40px_rgba(255,255,255,0.08)]
-          "
+                    w-full md:w-120
+                    backdrop-blur-lg bg-white/5
+                    border border-white/15
+                    rounded-3xl p-8
+                    shadow-2xl
+                    flex flex-col gap-6
+                    transition-all duration-300 ease-out
+                    hover:scale-[1.03]
+                    hover:shadow-[0_0_40px_rgba(255,255,255,0.08)]
+                "
                 >
                     {/* Image */}
                     <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-lg">
@@ -45,14 +45,12 @@ const About = () => {
                             alt="Profile"
                             className="w-full h-64 object-cover"
                         />
-
                         <div className="absolute bottom-0 left-0 right-0 bg-black/40 backdrop-blur-sm px-4 py-2">
                             <p className="text-xs text-gray-200 tracking-wide">
                                 a quiet moment between builds
                             </p>
                         </div>
                     </div>
-
                     {/* Socials */}
                     <div className="rounded-2xl backdrop-blur-md bg-white/5 border border-white/10 p-4 flex justify-center gap-5">
                         {[
@@ -78,45 +76,42 @@ const About = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={`
-                  w-11 h-11 flex items-center justify-center
-                  rounded-full bg-white/5
-                  border border-white/15
-                  text-gray-300
-                  ${item.hover}
-                  hover:bg-white/10
-                  hover:scale-110
-                  hover:shadow-lg hover:shadow-white/10
-                  transition-all duration-300
-                `}
+                                w-11 h-11 flex items-center justify-center
+                                rounded-full bg-white/5
+                                border border-white/15
+                                text-gray-300
+                                ${item.hover}
+                                hover:bg-white/10
+                                hover:scale-110
+                                hover:shadow-lg hover:shadow-white/10
+                                transition-all duration-300
+                                `}
                             >
                                 {item.icon}
                             </a>
                         ))}
                     </div>
                 </div>
-
                 {/* RIGHT CARD */}
                 <div
                     className="
-            w-full md:w-120
-            backdrop-blur-lg bg-white/5
-            border border-white/15
-            rounded-3xl p-8
-            shadow-2xl
-            flex flex-col gap-5
-            transition-all duration-300 ease-out
-            hover:scale-[1.03]
-            hover:shadow-[0_0_40px_rgba(255,255,255,0.08)]
-          "
+                    w-full md:w-120
+                    backdrop-blur-lg bg-white/5
+                    border border-white/15
+                    rounded-3xl p-8
+                    shadow-2xl
+                    flex flex-col gap-5
+                    transition-all duration-300 ease-out
+                    hover:scale-[1.03]
+                    hover:shadow-[0_0_40px_rgba(255,255,255,0.08)]
+                "
                 >
                     <h2 className="text-2xl md:text-3xl font-bold text-gray-300">
                         Hi, I’m <span className="text-[#FFD41D]">Dipannita Sharma</span>
                     </h2>
-
                     <p className="text-gray-400 italic text-sm md:text-base">
                         Designing interfaces that feel calm, clear, and intentionally overthought.
                     </p>
-
                     <p className="text-gray-200 leading-relaxed text-sm md:text-base">
                         I’m a frontend-focused developer who enjoys turning ideas into clean,
                         usable web experiences—usually after questioning every design decision
@@ -127,10 +122,8 @@ const About = () => {
                         over rushing things out.
                     </p>
                 </div>
-
             </div>
         </section>
     );
 };
-
 export default About;
