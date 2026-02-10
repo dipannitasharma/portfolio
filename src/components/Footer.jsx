@@ -8,7 +8,6 @@ const Footer = () => {
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
-
     // close tooltip on outside click (mobile-friendly)
     useEffect(() => {
         const handler = (e) => {
