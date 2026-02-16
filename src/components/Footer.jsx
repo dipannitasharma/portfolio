@@ -62,17 +62,14 @@ const Footer = () => {
                 shadow-2xl backdrop-blur
                 transition-all duration-200
                 ${open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none"}
-              `}
-                        >
-                            
-                            <p>
-                                Assisted by<span className="text-[#FFD41D]"> Caps</span>.<br />
-                                Reality checks by <span className="text-[#FFD41D]"> Clue5</span>.
+              `}>
+                <p>
+                        Assisted by<span className="text-[#FFD41D]"> Caps</span>.<br />
+                        Reality checks by <span className="text-[#FFD41D]"> Clue5</span>.
                             </p>
                         </div>
                     </div>
                 </div>
-
                 {/* RIGHT */}
                 <button
                     onClick={scrollToTop}
