@@ -15,6 +15,17 @@ const projects = [
     icon: <HiOutlineCode />,
     highlight: true,
   },
+  {
+    title: "Qrism",
+    status: "Completed",
+    desc: "A React app for generating QR codes for easy sharing of information.",
+    extra: "Supports various data types and customization options for QR code design.",
+    tags: ["React", "Tailwind", "qrcode.react"],
+    github: "https://github.com/dipannitasharma/QR_Code_Generator",
+    live: "https://q-rism.vercel.app/", 
+    icon: <HiOutlineCode />,
+    highlight: true,
+  },
   
 ];
 const Projects = () => {
