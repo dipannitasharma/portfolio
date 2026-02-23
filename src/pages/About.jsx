@@ -11,15 +11,15 @@ const About = () => {
             <div className="absolute top-1/3 -right-32 w-96 h-96 bg-pink-500/25 rounded-full blur-[120px]" />
             <div className="absolute bottom-0 left-1/3 w-72 h-72 bg-indigo-500/20 rounded-full blur-[100px]" />
 
-            {/* Heading
-            <div className="relative flex flex-col items-center text-white mb-24">
-                <h1 className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-3xl px-12 py-5 shadow-2xl text-3xl md:text-4xl font-bold">
+            {/* Heading */}
+            <div className="relative flex flex-col items-center text-white mb-10">
+                {/* <h1 className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-3xl px-12 py-5 shadow-2xl text-3xl md:text-4xl font-bold">
                     About Me
                 </h1>
                 <p className="mt-5 text-gray-400 text-xl tracking-wide italic">
                     Infinity and not beyond.
-                </p>
-            </div> */}
+                </p> */}
+            </div>
 
             {/* Content */}
             <div className=" relative flex flex-col md:flex-row justify-center items-stretch gap-14">
