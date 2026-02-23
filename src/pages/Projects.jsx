@@ -34,10 +34,6 @@ const Projects = () => {
             id="project"
             className="relative bg-[#110619] px-6 md:px-20 py-24 overflow-hidden"
         >
-            {/* ===== BACKGROUND ===== */}
-            <div className="absolute -top-32 -left-32 w-96 h-96 bg-purple-500/25 rounded-full blur-[120px]" />
-            <div className="absolute top-1/3 -right-32 w-96 h-96 bg-pink-500/25 rounded-full blur-[120px]" />
-            <div className="absolute bottom-0 left-1/3 w-72 h-72 bg-indigo-500/20 rounded-full blur-[100px]" />
 
             <div className="relative flex flex-col items-center mb-20 text-center z-10">
                 <h1 className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-3xl px-12 py-5 shadow-2xl text-3xl md:text-4xl font-bold text-white">

@@ -120,13 +120,13 @@ const Skills = () => {
       </div>
 
       {/*  CAROUSEL  */}
-      <div className="relative flex items-center justify-center w-full max-w-4xl h-105  z-10">
+      <div className="relative flex items-center justify-center w-full max-w-6xl h-105  z-10">
 
         <button
           onClick={prev}
           className="
     absolute flex items-center justify-center left-1 md:left-0 z-20
-    w-10 h-10 md:w-14 md:h-14
+    w-10 h-10 lg:w-14 lg:h-14
     rounded-full
     bg-white/10 backdrop-blur
     border border-white/20
@@ -135,7 +135,7 @@ const Skills = () => {
     transition
   "
         >
-          <HiChevronLeft className="text-xl md:text-3xl " />
+          <HiChevronLeft className="text-xl lg:text-3xl " />
         </button>
 
 
@@ -155,7 +155,7 @@ const Skills = () => {
           onClick={next}
           className="
     absolute flex items-center justify-center right-1 md:right-0 z-20
-    w-10 h-10 md:w-14 md:h-14
+    w-10 h-10 lg:w-14 lg:h-14
     rounded-full
     bg-white/10 backdrop-blur
     border border-white/20
@@ -164,7 +164,7 @@ const Skills = () => {
     transition
   "
         >
-          <HiChevronRight className="text-xl md:text-3xl " />
+          <HiChevronRight className="text-xl lg:text-3xl " />
         </button>
 
       </div>
