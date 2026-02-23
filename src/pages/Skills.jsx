@@ -106,9 +106,7 @@ const Skills = () => {
     <section id="skills" className="relative bg-[#110619] px-6 md:px-20 py-24 overflow-hidden flex flex-col items-center">
 
       {/*  STATIC BACKGROUND  */}
-      <div className="absolute -top-32 -left-32 w-96 h-96 bg-purple-500/25 rounded-full blur-[120px]" />
-      <div className="absolute top-1/3 -right-32 w-96 h-96 bg-pink-500/25 rounded-full blur-[120px]" />
-      <div className="absolute bottom-0 left-1/3 w-72 h-72 bg-indigo-500/20 rounded-full blur-[100px]" />
+   
 
 
       {/*  HEADING  */}
