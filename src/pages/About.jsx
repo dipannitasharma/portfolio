@@ -4,7 +4,7 @@ const About = () => {
     return (
         <section
             id="about"
-            className="relative bg-[#110619] px-6 md:px-20 py-24 min-h-screen overflow-hidden"
+            className=" pt-25 relative bg-[#110619] px-6 md:px-20 py-24 min-h-screen overflow-hidden"
         >
             {/* Floating soft blobs */}
             <div className="absolute -top-32 -left-32 w-96 h-96 bg-purple-500/25 rounded-full blur-[120px]" />
@@ -22,7 +22,7 @@ const About = () => {
             </div> */}
 
             {/* Content */}
-            <div className="pt-5 relative flex flex-col md:flex-row justify-center items-stretch gap-14">
+            <div className=" relative flex flex-col md:flex-row justify-center items-stretch gap-14">
 
                 {/* LEFT CARD */}
                 <div
