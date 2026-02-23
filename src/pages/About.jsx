@@ -4,7 +4,7 @@ const About = () => {
     return (
         <section
             id="about"
-            className="relative bg-[#110619] px-6 md:px-20 py-24 overflow-hidden"
+            className="relative bg-[#110619] px-6 lg:px-20 py-24 overflow-hidden"
         >
             {/* Floating soft blobs */}
             <div className="absolute -top-32 -left-32 w-96 h-96 bg-purple-500/25 rounded-full blur-[120px]" />
@@ -12,7 +12,7 @@ const About = () => {
             <div className="absolute bottom-0 left-1/3 w-72 h-72 bg-indigo-500/20 rounded-full blur-[100px]" />
 
             {/* Heading */}
-            <div className="relative flex flex-col items-center text-white mb-10">
+            <div className="relative flex flex-col items-center text-white mb-15">
                 {/* <h1 className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-3xl px-12 py-5 shadow-2xl text-3xl md:text-4xl font-bold">
                     About Me
                 </h1>
@@ -22,7 +22,7 @@ const About = () => {
             </div>
 
             {/* Content */}
-            <div className=" relative flex flex-col md:flex-row justify-center items-stretch gap-14">
+            <div className=" relative flex flex-col lg:flex-row justify-center items-stretch gap-14">
 
                 {/* LEFT CARD */}
                 <div
