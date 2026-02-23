@@ -46,7 +46,7 @@ const Navbar = () => {
 
     return (
         <header className="fixed top-0 left-0 w-full z-50">
-            <div className="px-4 pt-3">
+            <div className="px-4 pt-5 lg:px-20">
 
                 {/* ===== DESKTOP NAV ===== */}
                 <div className="hidden md:flex justify-center">
