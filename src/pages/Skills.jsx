@@ -103,42 +103,32 @@ const Skills = () => {
   const right = skills[(index + 1) % total];
 
   return (
-    <section id="skills" className="relative bg-[#110619] px-6 md:px-20 py-24 overflow-hidden flex flex-col items-center">
-
-      {/*  STATIC BACKGROUND  */}
-   
-
-
-      {/*  HEADING  */}
-      <div className="relative mb-16 text-center z-10">
-        <h1 className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-3xl px-12 py-5 shadow-2xl text-3xl md:text-4xl font-bold text-white">
+    <section
+      id="skills"
+      className="relative bg-[#110619] px-4 sm:px-6 md:px-20 py-20 md:py-24 min-h-screen overflow-hidden flex flex-col items-center"
+    >
+      {/* HEADING */}
+      <div className="relative mb-14 md:mb-16 text-center z-10">
+        <h1 className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-3xl px-8 md:px-12 py-4 md:py-5 shadow-2xl text-2xl md:text-4xl font-bold text-white">
           Skills
         </h1>
-        <p className="mt-5 text-gray-300 italic">
+        <p className="mt-4 md:mt-5 text-gray-300 italic text-sm md:text-base">
           tools I use while learning and building
         </p>
       </div>
 
-      {/*  CAROUSEL  */}
-      <div className="relative flex items-center justify-center w-full max-w-6xl h-105  z-10">
-
+      {/* CAROUSEL */}
+      <div className="relative flex items-center justify-center w-full max-w-6xl h-[420px] sm:h-[460px] md:h-[500px] z-10">
+        
+        {/* LEFT BUTTON */}
         <button
           onClick={prev}
-          className="
-    absolute flex items-center justify-center left-1 md:left-0 z-20
-    w-10 h-10 lg:w-14 lg:h-14
-    rounded-full
-    bg-white/10 backdrop-blur
-    border border-white/20
-    text-white
-    hover:scale-110
-    transition
-  "
+          className="absolute left-2 sm:left-4 md:left-0 z-20 w-10 h-10 lg:w-14 lg:h-14 rounded-full bg-white/10 backdrop-blur border border-white/20 text-white hover:scale-110 transition"
         >
-          <HiChevronLeft className="text-xl lg:text-3xl " />
+          <HiChevronLeft className="text-xl lg:text-3xl ml-2 lg:ml-3" />
         </button>
 
-
+        {/* CARDS */}
         <div
           className="relative w-full h-full flex items-center justify-center cursor-grab active:cursor-grabbing"
           onMouseDown={(e) => handleStart(e.clientX)}
@@ -151,22 +141,13 @@ const Skills = () => {
           <SkillCard skill={right} position="right" />
         </div>
 
+        {/* RIGHT BUTTON */}
         <button
           onClick={next}
-          className="
-    absolute flex items-center justify-center right-1 md:right-0 z-20
-    w-10 h-10 lg:w-14 lg:h-14
-    rounded-full
-    bg-white/10 backdrop-blur
-    border border-white/20
-    text-white
-    hover:scale-110
-    transition
-  "
+          className="absolute right-2 sm:right-4 md:right-0 z-20 w-10 h-10 lg:w-14 lg:h-14 rounded-full bg-white/10 backdrop-blur border border-white/20 text-white hover:scale-110 transition"
         >
-          <HiChevronRight className="text-xl lg:text-3xl " />
+          <HiChevronRight className="text-xl lg:text-3xl ml-2.5 lg:ml-3" />
         </button>
-
       </div>
     </section>
   );
@@ -174,53 +155,61 @@ const Skills = () => {
 
 export default Skills;
 
-/* CARD  */
+/* ---------------- CARD ---------------- */
 
 const SkillCard = ({ skill, position }) => {
-  const base =
-    `
-      absolute flex flex-col items-center text-center
-      backdrop-blur-xl bg-white/10
-      border border-white/20
-      rounded-[3rem]
-      px-6 md:px-8
-      py-8 md:py-10
-      shadow-2xl
-      transition-all duration-500 ease-out
-      w-[280px] sm:w-[300px] md:w-[320px]
-      h-[360px] md:h-[380px]
+  const base = `
+    absolute flex flex-col items-center text-center
+    backdrop-blur-xl bg-white/10
+    border border-white/20
+    rounded-[3rem]
+    px-6 md:px-8
+    py-8 md:py-10
+    shadow-2xl
+    transition-all duration-500 ease-out
+    w-[240px] sm:w-[280px] md:w-[320px] lg:w-[340px]
+    h-[340px] sm:h-[360px] md:h-[380px] lg:h-[400px]
   `;
 
   const positions = {
-    left: "scale-90 -translate-x-52 opacity-50",
-    center: "scale-100 z-10 hover:scale-[1.05]",
-    right: "scale-90 translate-x-52 opacity-50",
-  };
-
+  left: `
+    scale-75 sm:scale-90
+    -translate-x-28 sm:-translate-x-52 md:-translate-x-64
+    opacity-40
+  `,
+  center: `
+    scale-100 z-10
+    hover:scale-[1.05]
+  `,
+  right: `
+    scale-75 sm:scale-90
+    translate-x-28 sm:translate-x-52 md:translate-x-64
+    opacity-40
+  `,
+};
   return (
     <div className={`${base} ${positions[position]}`}>
       {position === "center" && (
         <div
-          className={`absolute -inset-1 rounded-[3.2rem] bg-linear-to-br ${skill.glow} blur-2xl`}
+          className={`absolute -inset-1 rounded-[3.2rem] bg-gradient-to-br ${skill.glow} blur-2xl`}
         />
       )}
 
-      <div className="relative w-20 h-20 rounded-full bg-white/20 flex items-center justify-center text-5xl text-white mb-6 shadow-inner">
+      <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/20 flex items-center justify-center text-4xl md:text-5xl text-white mb-4 md:mb-6 shadow-inner">
         {skill.icon}
       </div>
 
       <h3
-        className={`text-xl font-bold mb-2 bg-linear-to-r ${skill.titleStyle} bg-clip-text text-transparent`}
+        className={`text-lg md:text-xl font-bold mb-2 bg-gradient-to-r ${skill.titleStyle} bg-clip-text text-transparent`}
       >
         {skill.title}
       </h3>
 
-      <p className="text-sm text-gray-200 leading-relaxed mb-4 md:mb-6 px-1 md:px-2">
+      <p className="text-xs md:text-sm text-gray-200 leading-relaxed mb-4 md:mb-6 px-1 md:px-2">
         {skill.desc}
       </p>
 
-
-      <div className="w-16 h-px bg-white/30 mb-4 rounded-full" />
+      <div className="w-12 md:w-16 h-px bg-white/30 mb-4 rounded-full" />
 
       <div className="flex flex-wrap justify-center gap-2">
         {skill.tags.map((tag, i) => (
