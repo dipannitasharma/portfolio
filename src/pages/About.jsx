@@ -4,7 +4,7 @@ const About = () => {
     return (
         <section
             id="about"
-            className="relative bg-[#110619] px-6 lg:px-20 py-24 overflow-hidden"
+            className="relative bg-[#110619] px-6 lg:px-20 lg:py-20 py-15 overflow-hidden"
         >
             {/* Floating soft blobs */}
             <div className="absolute -top-32 -left-32 w-96 h-96 bg-purple-500/25 rounded-full blur-[120px]" />
