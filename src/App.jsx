@@ -25,7 +25,6 @@ const App = () => {
       {/* MAIN APP — ALWAYS MOUNTED */}
       <div className="relative w-full">
         <Navbar />
-        <Page1 />
         <About />
         <Skills />
         <Projects />

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 
-const sections = ["home", "about", "skills", "project", "contact"];
+const sections = [ "about", "skills", "project", "contact"];
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-    const [active, setActive] = useState("home");
+    const [active, setActive] = useState("about");
     const [scrolled, setScrolled] = useState(false);
 
     /* ---------- ACTIVE SECTION ---------- */
@@ -32,7 +32,6 @@ const Navbar = () => {
     }, []);
 
     const links = [
-        { label: "Home", href: "#home" },
         { label: "About", href: "#about" },
         { label: "Skills", href: "#skills" },
         { label: "Projects", href: "#project" },
@@ -47,7 +46,7 @@ const Navbar = () => {
 
     return (
         <header className="fixed top-0 left-0 w-full z-50">
-            <div className="px-4 pt-6">
+            <div className="px-4 pt-3">
 
                 {/* ===== DESKTOP NAV ===== */}
                 <div className="hidden md:flex justify-center">
