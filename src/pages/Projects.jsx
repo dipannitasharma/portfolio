@@ -1,4 +1,4 @@
-import { HiOutlineCode } from "react-icons/hi";
+import { HiOutlineCode,HiOutlineLink } from "react-icons/hi";
 import { FaReact, FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
 
@@ -16,16 +16,16 @@ const projects = [
     highlight: true,
   },
   {
-    title: "Qrism",
-    status: "Completed",
-    desc: "A React app for generating QR codes for easy sharing of information.",
-    extra: "Supports various data types and customization options for QR code design.",
-    tags: ["React", "Tailwind", "qrcode.react"],
-    github: "https://github.com/dipannitasharma/QR_Code_Generator",
-    live: "https://q-rism.vercel.app/", 
-    icon: <HiOutlineCode />,
-    highlight: true,
-  },
+  title: "URL Shortener",
+  status: "In Progress",
+  desc: "A Node.js and Express.js application for shortening long URLs into shareable links with custom aliases.",
+  extra: "Supports URL redirection, click analytics, and PostgreSQL-backed persistent storage.",
+  tags: ["Node.js", "Express.js", "PostgreSQL", "JavaScript"],
+  github: "https://github.com/dipannitasharma/URL_Shortener",
+  live: "", // Add deployment URL if available
+  icon: <HiOutlineLink />,
+  highlight: true,
+},
   
 ];
 const Projects = () => {
