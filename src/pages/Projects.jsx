@@ -16,14 +16,14 @@ const projects = [
     highlight: true,
   },
   {
-  title: "URL Shortener",
-  status: "In Progress",
+  title: "CutURL",
+  status: "Completed",
   desc: "A Node.js and Express.js application for shortening long URLs into shareable links with custom aliases.",
   extra: "Supports URL redirection, click analytics, and PostgreSQL-backed persistent storage.",
   tags: ["Node.js", "Express.js", "PostgreSQL", "JavaScript"],
   github: "https://github.com/dipannitasharma/URL_Shortener",
-  live: "", // Add deployment URL if available
-  icon: <HiOutlineLink />,
+  live: "https://cuturl-js7j.onrender.com", // Add deployment URL if available
+  icon: <HiOutlineCode />,
   highlight: true,
 },
   
